@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <header>
+            <div class="header">
+                <img id= "logo" src="img/Logo.svg" alt="Logo de Alura">
+            </div>
+        </header>
+
+        <main>   
+            <section class="contenidoEncriptador">
+
+                <section class="seccionDeEntrada">
+
+                    <textarea onclick="porDefecto()" id="texto" placeholder="Ingrese texto aquí"></textarea>
+
+                    <div class="alerta">
+                        <img class="imagenAlerta"src="img/!.png" alt="Logo de alerta">
+                        <p id="textAlerta">Solo letras minusculas y sin acentos</p>
+                    </div>
+
+                    <div class="botones">
+                        <button id ="botonCifrar" onclick="validarTexto(true)">Encriptar Texto</button>
+                        <button id ="botonDescifrar" onclick="validarTexto(false)">Descifrar Texto</button>
+                    </div>
+
+                </section>
+
+                <section class="seccionDeSalida">
+                    <img id= "persona"src="img/Persona.png" alt="">
+                    <div id="defecto">
+                        <h2>Ningún mensaje fue<br>encontrado</h2>
+                        <p>Ingresa el mensaje que deseas<br>encriptar o desencriptar</p>
+                    </div>
+                    <textarea  id="resultado" ></textarea>
+                        <button id="copiar" onclick="botonCopiar()">Copiar</button>
+                </section>
+            <section>
+        </main>
+        <footer class="redes">
+            <a href="https://github.com/lxssless" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/marco-antonio-c%C3%A9spedes-carri%C3%B3n-5100b52ab/" class="fa fa-linkedin"></a>
+        </footer>
+    <script src="app.js"></script>
+</body>
+</html>
